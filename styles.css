@@ -95,7 +95,7 @@ body nav ul{
 #name{
     color: var(--main-color);
 }
-#icon{
+.icon{
     color: var(--dark-shade);
     font-weight: bold;
 }
