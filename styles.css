@@ -1,0 +1,126 @@
+:root{
+    --light-shade: #f3f5f3; /*background for your dark-on-light designs, or the text color of an inverted design.*/
+    --light-accent:#B8B6A5;/*bring attention to design elements by contrasting with the rest of the palette.*/
+    --main-color:#A892AA;/* It can be liberally applied to your layout as its main identity.*/
+    --dark-accent:#9B9AB0;/*Another accent color to consider.*/
+    --dark-shade:#67718F;/*Use as the text color for dark-on-light designs, or as the background for inverted designs.*/
+}
+*{
+    transition: 0.3s;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:var(--dark-shade);
+    background-color: var(--light-shade);
+    box-sizing: border-box;
+}
+body nav{
+    box-shadow: 0 5px 20px -15px var(--dark-accent);
+    text-transform:uppercase;
+    padding: 8px 25px;
+    position:sticky;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+body nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+#name{
+    color: var(--main-color);
+}
+#icon{
+    color: var(--dark-shade);
+    font-weight: bold;
+}
+body nav ul li{
+    margin: 6px 10px;
+}
+body nav ul li a{
+    color:var(--dark-shade);
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    border-bottom: 8px solid var(--main-color);
+    z-index: -1;
+    bottom: -8px;
+    left: 0px;
+    right:0px;
+    width: 0px;
+}
+nav a:hover::after {
+    transition: 0.5s;
+    width: 100%;
+}
+h1.typewrite{
+    font-size: 40px;
+}
+nav h2 img{    width: 32px;
+    margin: auto;
+    height: fit-content;}
+#home{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#home img{
+    height:70vh;
+    display: inline-block;
+    box-shadow:  2px 2px 10px -2px var(--dark-accent), 25px 20px 0 0 var(--main-color);
+
+}
+
+#home article{
+    width:50%;
+    margin:50px auto;}
+#home article p{
+    font-size: 18px;
+}
+#home article p a{
+    text-decoration: none;
+    font-style: oblique;
+    color: var(--dark-accent);
+}
+#about{
+    width: 100%;
+    position: relative;
+    margin: 120px auto;
+    background-color: var(--dark-shade);
+    height: 100vh;
+    color: var(--light-shade);
+}
+
+
+#about h2{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: -3px 4px var(--main-color);
+}
+#about article{
+    column-count: 3;
+    column-gap: 60px;
+    column-rule: 1px solid var(--light-shade);
+    padding: 40px;
+}
+#about article h3{
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: -3px 3px var(--main-color);
+}
