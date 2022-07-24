@@ -5,7 +5,7 @@
     <meta name="web developer, portfolio, web designer, software engineer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
-
+    <link rel="icon" href="images/mouse.png"> 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +14,48 @@
     <!--AOS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/ae56d56b77.js" crossorigin="anonymous"></script>
     <title>Rita Doumet | Portfolio</title>
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <nav >
+    <div id="social_media">
+        <div class="social_media_container">
+            <button onclick="expand()" class="social_icon">
+                <img src="images/angle-up-solid.svg" id="expandbtn">
+            </button>
+        </div>
+    
+        <div class="social_media_container">
+        <a href="https://www.linkedin.com/in/rita-doumet/" class="social_icon" target="_blank">
+            <img src="images/linkedin.svg" alt="Linkedin">
+        </a>
+        <p class="social_media_details">LinkedIn</p>
+        </div>
+        
+        <div class="social_media_container">
+        <a href="https://github.com/ritadoumet" class="social_icon" target="_blank">
+            <img src="images/github.svg" alt="Github">
+        </a>
+        <p class="social_media_details">GitHub</p>
+        </div>
+        
+        <div class="social_media_container">
+        <a href="https://www.instagram.com/ritadoumet/" class="social_icon" target="_blank">
+            <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <p class="social_media_details">Instagram</p>
+        </div>
+    </div>
+    <nav id="navbar">
         <h2 id="name"> 
-            <span id="icon">&#60;</span>
-             Rita Doumet 
-            <span id="icon">/&#62;</span>
+            <a href="#home">
+
+                <span id="icon">&#60;</span>
+                Rita Doumet 
+               <span id="icon">/&#62;</span>
+            </a>
         </h2>
         <ul>
             <li >
@@ -151,7 +183,7 @@
                 <div>
                     <blockquote data-aos="fade-up">
                 
-                        A teacher once told me I was going to change the world , and I intend to do that one line of code at a time. 
+                        A teacher once told me I was going to change the world. I intend to do that, one line of code at a time. 
                         <br><span class="comment">// Yes you, Mrs. Celine. Thank you.</span>
                     </blockquote>
                 </div>
@@ -168,5 +200,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -13,19 +13,78 @@ body{
     margin: 0;
     padding: 0;
     color:var(--dark-shade);
+    position: relative;
     background-color: var(--light-shade);
     box-sizing: border-box;
+    height:fit-content;
 }
-body nav{
+#social_media{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition:0.3s;
+    z-index: 10;
+    height: 40px;
+    flex-direction: column;
+    align-items: end;
+}
+.social_media_container{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+p.social_media_details{
+    display: none;
+    transition: 0.3s;
+    margin: 0 5px;
+    font-weight: bold;
+    color: var(--main-color);}
+a:hover ~ p{
+display: block;
+}
+button.social_icon{
+    border: none;
+    cursor: pointer;
+    background-color: var(--dark-accent);
+}
+.social_icon{
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 40px;
+    margin: 10px 0;
+    display: flex;
+    box-shadow: 2px 2px 10px -5px var(--dark-shade);
+    /* padding: 10px; */
+    justify-content: center;
+}
+a.social_icon img{
+    width: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+#navbar{
     box-shadow: 0 5px 20px -15px var(--dark-accent);
     text-transform:uppercase;
     padding: 8px 25px;
-    position:sticky;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--light-shade);
+  }
+  
 body nav ul{
     list-style-type: none;
     display: flex;
@@ -82,10 +141,14 @@ nav h2 img{    width: 32px;
 #home img{
     height:70vh;
     display: inline-block;
+    transition: 0.3s;
     box-shadow:  2px 2px 10px -2px var(--dark-accent), 25px 20px 0 0 var(--main-color);
 
 }
+#home img:hover{
+    box-shadow:  2px 2px 10px -2px var(--dark-accent), 55px 30px 0 0 var(--main-color);
 
+}
 #home article{
     width:50%;
     margin:50px auto;}
@@ -147,7 +210,8 @@ blockquote {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 40px;
-    font-size: larger;
+    font-weight: bold;
     margin-right: 40px;
     font-style: oblique;
+    letter-spacing: 2px;
   }
