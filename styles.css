@@ -142,12 +142,12 @@ nav h2 img{    width: 32px;
     height:70vh;
     display: inline-block;
     transition: 0.3s;
+    position: relative;
     box-shadow:  2px 2px 10px -2px var(--dark-accent), 25px 20px 0 0 var(--main-color);
 
 }
 #home img:hover{
-    box-shadow:  2px 2px 10px -2px var(--dark-accent), 55px 30px 0 0 var(--main-color);
-
+    box-shadow:  2px 2px 10px -2px var(--dark-accent), 45px 30px 0 0 var(--main-color);
 }
 #home article{
     width:50%;
@@ -163,7 +163,7 @@ nav h2 img{    width: 32px;
 #about{
     width: 100%;
     position: relative;
-    margin: 120px auto;
+    margin: 100px auto 0 auto;
     background-color: var(--dark-shade);
     color: var(--light-shade);
 }
@@ -177,7 +177,7 @@ nav h2 img{    width: 32px;
 }
 #about article{
     column-count: 2;
-    column-gap: 70px;
+    column-gap: 80px;
     column-rule: 1px solid var(--light-shade);
     padding: 50px 70px 70px 70px;
 }
@@ -215,3 +215,91 @@ blockquote {
     font-style: oblique;
     letter-spacing: 2px;
   }
+  #skills{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: px auto;
+  }
+  #skills h2{
+    font-size: 70px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: -3px 4px var(--dark-shade);
+    margin: 40px auto;
+}
+#skills article{
+    width: 70%;
+    margin: auto;
+}
+.skill_icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skill_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill_icons img{
+    margin: 0 20px;
+}
+#skills article h3{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+}
+#contact{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#contact form{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    box-shadow: 2px 2px 10px -5px var(--dark-shade);
+    width: 40vw;
+    color: var(--light-shade);
+    flex-direction: column;
+}
+#contact form h2{
+    font-size: 50px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: -3px 4px var(--light-accent);
+}
+label{
+    padding:15px 0 0 0;
+}
+input{
+    background: var(--light-shade);
+    color: var(--dark-shade);
+    font-weight: bold;
+    font-family: 'Quicksand';
+    padding: 5px 10px;
+    caret-color: var(--dark-accent);
+    border-radius: 5px;
+    border: 1px solid var(--light-accent);
+}
+input[type="submit"]{
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    padding: 8px;
+    border: none;
+    margin: 25px 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px var(--light-shade);
+    cursor: pointer;
+}
+fieldset{border-radius: 20px;
+    border-color: var(--light-accent);
+    padding: 30px;}
