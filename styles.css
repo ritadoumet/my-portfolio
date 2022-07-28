@@ -257,7 +257,10 @@ blockquote {
 #contact{
     margin: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+
 }
 #contact form{
     background-color: var(--main-color);
@@ -292,8 +295,10 @@ input, textarea{
 input[type="submit"]{
     background-color: var(--dark-shade);
     color: var(--light-shade);
-    padding: 8px;
+    padding: 8px 25px;
     border: none;
+    width: fit-content;
+    align-self: flex-end;
     margin: 25px 0 10px 0;
     font-size: 20px;
     font-weight: bold;
@@ -303,3 +308,102 @@ input[type="submit"]{
 fieldset{border-radius: 20px;
     border-color: var(--light-accent);
     padding: 30px;}
+#contact article ul{
+    list-style-type: none;
+    padding:0;
+}
+#contact ul li{
+    padding: 30px 10px 30px 0;
+    font-size: 22px;
+}
+#contact ul li img{
+    width: 32px;
+    height: 32px;
+    padding: 0 10px;
+    position: relative;
+    top: 5px;
+}
+#contact article{
+    padding: 30px 50px;
+}
+#contact article h2{
+    font-size: 32px;
+}
+#projects{
+    position: relative;
+    opacity: 1;
+    padding: 50px 40px;
+    margin: 90px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+#projects:before{
+    content: ' ';
+    background: url(images/projects/bg.jpg);
+    background-repeat: repeat;
+    background-color: rgb(250,250,250,0.9);
+    opacity: 0.3;
+    z-index: -1;
+   top:0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+  display: block;
+  position: absolute;
+}
+#projects h2{
+    font-size: 70px;
+    color: var(--dark-shade);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: -3px 4px var(--dark-accent);
+    position: absolute;
+    top: -115px;
+}
+
+.project{
+    width: 33%;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 3px 5px 25px -5px var(--dark-shade);
+    background-color: var(--light-shade);
+    cursor: pointer;
+}
+.project_img{
+    background: var(--main-color);
+    border-radius: 20px 20px 0 0;
+}
+.project_img img{
+    width: 100%;
+    margin: auto;
+}
+.project_desc{
+    padding: 10px 25px 15px 20px;
+    font-size: 14px;
+}
+.proj_details{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 3px 5px 25px -5px var(--dark-shade);
+    background-color: var(--light-shade);
+}
+.proj_details>*{
+    padding: 30px 40px;
+}
+.close_btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 32px;
+    cursor: pointer;
+}
+.media_desc{
+    position: relative;
+}

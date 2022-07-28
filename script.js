@@ -1,4 +1,6 @@
 expand();
+toggleDetails('opengl_proj');
+toggleDetails('javafxgame_proj');
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -89,11 +91,11 @@ function expand(){
     if (!expanded){
         socialmedia.style.display="flex";
         socialmedia.style.height="fit-content";
-        expandbtn.src="images/angle-down-solid.svg";
+        expandbtn.src="images/icons/angle-down-solid.svg";
     }else{
         socialmedia.style.display="block";
         socialmedia.style.height="40px";
-        expandbtn.src="images/angle-up-solid.svg";
+        expandbtn.src="images/icons/angle-up-solid.svg";
     }
     expanded=!expanded;
 }
@@ -109,4 +111,13 @@ function phonenumber(inputtxt)
 	   alert("Not a valid Phone Number");
 	   return false;
      }
+}
+function toggleDetails(idElt){
+  var elmt = document.getElementById(idElt);
+  if (elmt.style.display=='none'){
+    elmt.style.display='flex';
+  }
+  else{
+    elmt.style.display='none';
+  }
 }
