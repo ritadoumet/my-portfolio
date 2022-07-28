@@ -1,6 +1,8 @@
 expand();
 toggleDetails('opengl_proj');
 toggleDetails('javafxgame_proj');
+toggleDetails('petstore_proj');
+toggleDetails('ipaddr_proj');
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -116,6 +118,7 @@ function toggleDetails(idElt){
   var elmt = document.getElementById(idElt);
   if (elmt.style.display=='none'){
     elmt.style.display='flex';
+    document.getElementById(idElt).scrollIntoView();
   }
   else{
     elmt.style.display='none';

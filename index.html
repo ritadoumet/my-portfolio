@@ -138,25 +138,25 @@
                     <strong>Courses :</strong>
                     <br>
                 <ul class="courses">
-                    <li>Imperative Programming</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Logic Programming</li>
-                    <li>Machine Architecture</li>
-                    <li>Operating Systems</li>
-                    <li>Graph Theory</li>
-                    <li>Client-Side Web Development</li>
-                    <li>Server-Side Web Development</li>
-                    <li>Android Development</li>
-                    <li>Software Engineering</li>
-                    <li>Data Structures and Algorithms I & II</li>
-                    <li>Algebra and Arithmetic I & II</li>
-                    <li>Database Management I & II</li>
-                    <li>Automata Theory</li>
-                    <li>Image Processing</li>
-                    <li>Computer Graphics</li>
-                    <li>GUI & Design Patterns</li>
-                    <li>Networking I & II</li>
-                    <li>Statistics</li>
+                    <li data-aos="fade-up">Imperative Programming</li>
+                    <li data-aos="fade-up">Object Oriented Programming</li>
+                    <li data-aos="fade-up">Logic Programming</li>
+                    <li data-aos="fade-up">Machine Architecture</li>
+                    <li data-aos="fade-up">Operating Systems</li>
+                    <li data-aos="fade-up">Graph Theory</li>
+                    <li data-aos="fade-up">Client-Side Web Development</li>
+                    <li data-aos="fade-up">Server-Side Web Development</li>
+                    <li data-aos="fade-up">Android Development</li>
+                    <li data-aos="fade-up">Software Engineering</li>
+                    <li data-aos="fade-up">Data Structures and Algorithms I & II</li>
+                    <li data-aos="fade-up">Algebra and Arithmetic I & II</li>
+                    <li data-aos="fade-up">Database Management I & II</li>
+                    <li data-aos="fade-up">Automata Theory</li>
+                    <li data-aos="fade-up">Image Processing</li>
+                    <li data-aos="fade-up">Computer Graphics</li>
+                    <li data-aos="fade-up">GUI & Design Patterns</li>
+                    <li data-aos="fade-up">Networking I & II</li>
+                    <li data-aos="fade-up">Statistics</li>
                 </ul>
                 </p>
                 <h4 data-aos="fade-up">
@@ -181,7 +181,29 @@
                     then working on personal projects.
                 </p>
                 </p>
-                <h3 data-aos="fade-up">3 - Where I'm Headed</h3>
+                <h3 data-aos="fade-up">3 - Languages Spoken</h3>
+                <ul class="courses" data-aos="fade-up">
+                    <li>
+                        Arabic, <i>Native</i>
+                    </li><li>
+                        English, <i>Proficient</i>
+                    </li><li>
+                        French, <i>Proficient</i>
+                    </li><li>
+                        Spanish, <i>Intermediate</i>
+                    </li>
+                </ul>
+                
+                <h3 data-aos="fade-up">4 - Interests</h3>
+                <p class="details" data-aos="fade-up">
+                    Aside from my geekiness, I am also passionate about all things artistic.
+                    <br>
+                    That is why I pour my heart out into every design I make.
+                    <br>
+                    Maths and Sciences also have a special place in my heart,<br>
+                    and I am proud to say that I have taught private high-school level Math, Physics, and Chemistry courses.
+                </p>
+                <h3 data-aos="fade-up">5 - Where I'm Headed</h3>
                 <p class="details" data-aos="fade-up">
                     Saying that the last few years have been challenging would be an understatement.
                     <br>
@@ -287,11 +309,11 @@
         </section>
 
         <section id="projects">
-            <h2>
+            <h2 data-aos="fade-up">
                 Personal Projects
             </h2>
             <!--opengl-->
-            <article class="project" onclick="toggleDetails('opengl_proj')">
+            <article class="project" onclick="toggleDetails('opengl_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/PendulumWaves.png" alt="Pendulum Waves Physics Animation">
                 </div>
@@ -301,7 +323,7 @@
                     C/C++, OpenGL Library
                 </div>
             </article>
-            <div id="opengl_proj" class="proj_details">
+            <div id="opengl_proj" class="proj_details" data-aos="fade-right">
                 <div class="media">
                     <p>Demo 1: No interactivity</p>
                     <video width="320" controls>
@@ -314,7 +336,7 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="media_desc">
+                <div class="media_desc" >
                     <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('opengl_proj')" class="close_btn">
                     <h3>
                         Pendulum Waves Physics Simulation
@@ -353,9 +375,9 @@
             </div>
 
             <!--JavaFX-->
-            <article class="project" onclick="toggleDetails('javafxgame_proj')">
+            <article class="project" onclick="toggleDetails('javafxgame_proj')" data-aos="fade-right">
                 <div class="project_img">
-                    <img src="images/projects/PendulumWaves.png" alt="Pendulum Waves Physics Animation">
+                    <img src="images/projects/HotNCold.png" alt="JavaFX HotNCold Game" width="100px">
                 </div>
                 <div class="project_desc">
                     <h3>HotN'Cold Desktop Game</h3>
@@ -363,18 +385,18 @@
                     JavaFX, FXML, and JavaFX CSS
                 </div>
             </article>
-            <div id="javafxgame_proj" class="proj_details">
+            <div id="javafxgame_proj" class="proj_details" data-aos="fade-right">
                 <div class="media">
-                    <p>Demo 1: No interactivity</p>
+                    <p>Screenshot</p>
                     <img src="images/projects/HotNCold.png" height="400px" alt="JavaFX game round">
-                    <p>Demo 2: Keyboard interactivity</p>
+                    <p>Demo</p>
                     <video width="320" controls>
                         <source src="videos/javafxgame.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="media_desc">
-                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('opengl_proj')" class="close_btn">
+                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('javafxgame_proj')" class="close_btn">
                     <h3>
                         HotN'Cold Desktop Game, JavaFx
                     </h3>
@@ -410,6 +432,124 @@
                          Every time you win a round, the number of tiles on the board increases, making the hottest tile harder to find. You lose either by clicking on too many tiles without finding the target tile, or by time-out.
                     </p>
                     <a href="https://github.com/ritadoumet/hotncold-game" target="_blank">Source code</a>
+                </div>
+                
+            </div>
+
+            <!--Android-->
+            <article class="project" onclick="toggleDetails('petstore_proj')" data-aos="fade-right">
+                <div class="project_img">
+                    <img src="images/projects/AndroidSignUp.png" alt="Android Pet Store App" width="100px">
+                </div>
+                <div class="project_desc">
+                    <h3>Pet Store Android App</h3>
+                    <strong>Languages: </strong><br>
+                    Java, XML
+                </div>
+            </article>
+            <div id="petstore_proj" class="proj_details" data-aos="fade-right">
+                <div class="media">
+                    <p>Screenshot 1 : Sign Up Page</p>
+                    <img src="images/projects/AndroidSignUp.png" height="400px" alt="Android Pet Store App">
+                    <p>Screenshot 2 : Customer Main Menu Page</p>
+                    <img src="images/projects/AndroidMainMenu.png" height="400px" alt="Android Pet Store App main menu">
+                    
+                </div>
+                <div class="media_desc">
+                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('petstore_proj')" class="close_btn">
+                    <h3>
+                        Pet Store Application, Android
+                    </h3>
+                    <h4>
+                        Technology :
+                    </h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>XML</li>
+                        <li>JFirebase Realtime Database</li>
+                    </ul>
+                    <h4>
+                        Tools :
+                    </h4>
+                    <ul>
+                        <li>
+                            Android Studio
+                        </li>
+                    </ul>
+                    <h4>
+                        Description :
+                    </h4>
+                    <p>
+                        This application was developed to be used as a main management system for a pet store. 
+                        <br>
+                        It was developed as a project for UML & Android courses.
+                        <br>
+                        This hypothetical pet store offers clients both products of many types and services to several animal species. 
+                         <br>
+                         It facilitates communication between clients and staff, makes way for online purchases, online booking, and data archieving in an online real-time database.<br>
+                    </p>
+                    <a href="https://github.com/ritadoumet/PetStoreApp" target="_blank">Source code</a>
+                </div>
+                
+            </div>
+
+            <!--IP address tracker-->
+            <article class="project" onclick="toggleDetails('ipaddr_proj')" data-aos="fade-right">
+                <div class="project_img">
+                    <img src="images/projects/ipaddresstracker.png" alt="IP address tracker" width="100px">
+                </div>
+                <div class="project_desc">
+                    <h3>IP Address Tracker</h3>
+                    <strong>Languages: </strong><br>
+                    HTML5, CSS3, JavaScript
+                </div>
+            </article>
+            <div id="ipaddr_proj" class="proj_details" data-aos="fade-right">
+                <div class="media">
+                    <p>Screenshot 1 : Desktop view</p>
+                    <img src="images/projects/ipaddresstracker.png" height="300px" alt="Desktop View">
+                    <p>Screenshot 2 : Mobile View</p>
+                    <img src="images/projects/ipaddresstracker_mobile.png" height="400px" alt="Mobile View">
+                    
+                </div>
+                <div class="media_desc">
+                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('ipaddr_proj')" class="close_btn">
+                    <h3>
+                        IP Address Tracker, web
+                    </h3>
+                    <h4>
+                        Technology :
+                    </h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>IP Geolocation API</li>
+                        <li>Leaflet API</li>
+                    </ul>
+                    <h4>
+                        Tools :
+                    </h4>
+                    <ul>
+                        <li>
+                            Visual Studio Code
+                        </li>
+                    </ul>
+                    <h4>
+                        Description :
+                    </h4>
+                    <p>
+                        This is a Frontend Mentor Challenge, of Intermediate difficulty.
+                        <br>
+                        It uses IP Geolocation API and Leaflet API to track the location of a given IP address.
+                        <br>
+                        The website first loads the user's location based on their IP Address.
+                        <br>
+                        It was a very fun project to code. I added my own small touches to it,
+                        <br>
+                         but it closely follows the initial design.
+                    <a href="https://github.com/ritadoumet/ip-tracker" target="_blank">Source code</a>
+                    <a href="https://ritadoumet.github.io/ip-tracker/" target="_blank"></a>
                 </div>
                 
             </div>
