@@ -77,7 +77,7 @@ a{
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -331,14 +331,16 @@ fieldset{border-radius: 20px;
 }
 #projects{
     position: relative;
-    opacity: 1;
+    column-count: 4;
+    column-gap: 2em;
+    column-width: 25%;
     padding: 50px 40px;
     margin: 90px 0;
 }
-#projects > *{
+ #projects > *{
     display: inline-block;
     vertical-align:top;
-}
+} 
 #projects:before{
     content: ' ';
     background: url(images/projects/bg.jpg);
@@ -364,7 +366,7 @@ fieldset{border-radius: 20px;
 }
 
 .project{
-    width: 20%;
+    width: 100%;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 3px 5px 25px -5px var(--dark-shade);
@@ -389,7 +391,14 @@ fieldset{border-radius: 20px;
 }
 .proj_details{
     width: 90%;
-    display: flex;
+    height: fit-content;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index: 100;
+    display: none;
     flex-direction: row;
     flex-wrap:nowrap;
     border-radius: 20px;
@@ -403,6 +412,7 @@ fieldset{border-radius: 20px;
 }
 .close_btn{
     position: absolute;
+    z-index: 101;
     top: 20px;
     right: 20px;
     height: 32px;
@@ -410,4 +420,176 @@ fieldset{border-radius: 20px;
 }
 .media_desc{
     position: relative;
+}
+
+/*Timeline*/
+.timeline{
+    position: relative;
+    margin: 0px auto 50px auto;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #e4e4e4;
+}
+
+.timeline ul li:hover .time{
+    transform: scale(1.1);
+}
+
+/*Elementos de lista*/
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+/*Circulo indicador*/
+.timeline ul li::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--dark-shade);
+}
+
+.timeline ul li:nth-child(odd)::before{
+    right: -6px;
+}
+
+.timeline ul li:nth-child(even)::before{
+    left: -4px;
+}
+
+.timeline ul li:hover::before{
+    transform: scale(1.5);
+}
+
+/*Fecha*/
+.time{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background-color: #E0EFF1;
+    color: var(--dark-shade);
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px var(--dark-accent);
+}
+#work h1{
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--main-color);
+    text-shadow: -3px 4px var(--dark-shade);
+}
+
+#work h3{
+    font-weight: 400;
+}
+
+/*Contenido*/
+.content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li h2{
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.timeline ul li p{
+    margin: 10px 0;
+    font-weight: 300;
+}
+/* Responsive: phone */
+@media (max-width: 768px) {
+    body, html{
+        overflow-x: hidden;
+    }
+    #home{
+        margin: auto;
+    }
+    #home article{
+        width: 100%;
+        margin: 30px auto;
+    }
+    #home img{
+        height: auto;
+        width: 75vw;
+    }
+    h1.typewrite{
+        font-size: 25px;
+        margin: 0px;
+    }
+    body nav ul {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    #name{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #about article{
+        column-count: auto;
+        padding: 20px;
+    }
+    #about h2{
+        font-size: 50px;
+    }
+    #projects{
+        column-count: auto;
+        padding: 40px 20px;
+    }
+    #projects h2{
+        font-size: 50px;
+    }
+    .project{
+        margin: 10px 0;
+    }
+    .proj_details{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .proj_details >*{
+        padding: 0;
+    }
+    .media img {
+        width: 100%;
+        height: auto;
+    }
+    #contact{
+        margin: 20px;
+    }
+    #contact form{
+        width: 100vw;
+    }
 }

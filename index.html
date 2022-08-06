@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div id="social_media">
+     <div id="social_media">
         <div class="social_media_container">
             <button onclick="expand()" class="social_icon">
                 <img src="images/icons/angle-up-solid.svg" id="expandbtn">
@@ -50,7 +50,7 @@
             <p class="social_media_details">Instagram</p>
         </div>
     </div>
-    <nav id="navbar">
+     <nav id="navbar">
         <h2 id="name">
             <a href="#navbar">
 
@@ -185,15 +185,18 @@
                 <ul class="courses" data-aos="fade-up">
                     <li>
                         Arabic, <i>Native</i>
-                    </li><li>
+                    </li>
+                    <li>
                         English, <i>Proficient</i>
-                    </li><li>
+                    </li>
+                    <li>
                         French, <i>Proficient</i>
-                    </li><li>
+                    </li>
+                    <li>
                         Spanish, <i>Intermediate</i>
                     </li>
                 </ul>
-                
+
                 <h3 data-aos="fade-up">4 - Interests</h3>
                 <p class="details" data-aos="fade-up">
                     Aside from my geekiness, I am also passionate about all things artistic.
@@ -201,7 +204,8 @@
                     That is why I pour my heart out into every design I make.
                     <br>
                     Maths and Sciences also have a special place in my heart,<br>
-                    and I am proud to say that I have taught private high-school level Math, Physics, and Chemistry courses.
+                    and I am proud to say that I have taught private high-school level Math, Physics, and Chemistry
+                    courses.
                 </p>
                 <h3 data-aos="fade-up">5 - Where I'm Headed</h3>
                 <p class="details" data-aos="fade-up">
@@ -312,7 +316,6 @@
             <h2 data-aos="fade-up">
                 Personal Projects
             </h2>
-            <!--opengl-->
             <article class="project" onclick="toggleDetails('opengl_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/PendulumWaves.png" alt="Pendulum Waves Physics Animation">
@@ -324,6 +327,8 @@
                 </div>
             </article>
             <div id="opengl_proj" class="proj_details" data-aos="fade-right">
+                <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('opengl_proj')"
+                    class="close_btn">
                 <div class="media">
                     <p>Demo 1: No interactivity</p>
                     <video width="320" controls>
@@ -336,8 +341,7 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="media_desc" >
-                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('opengl_proj')" class="close_btn">
+                <div class="media_desc">
                     <h3>
                         Pendulum Waves Physics Simulation
                     </h3>
@@ -352,7 +356,7 @@
                         Tools :
                     </h4>
                     <ul>
-                        <li>Visual Studio 2022</li>                        
+                        <li>Visual Studio 2022</li>
                     </ul>
                     <h4>
                         Description :
@@ -362,19 +366,21 @@
                         <br>
                         It uses OpenGL GLUT libraries to display an intricate physics animation.
                         <br>
-                        It was coded on Visual Studio 2022. 
+                        It was coded on Visual Studio 2022.
                         <br>
-                        The subject of this project is the simulation of the motion of perfectly adjusted simple pendulums.<br>
+                        The subject of this project is the simulation of the motion of perfectly adjusted simple
+                        pendulums.<br>
                         It was completely inspired by Harvard Natural Sciences Lecture Demonstrations video,<br>
-                        which is available <a href="https://www.youtube.com/watch?app=desktop&v=yVkdfJ9PkRQ&ab_channel=HarvardNaturalSciencesLectureDemonstrations" target="_blank">here</a>.
-                        
+                        which is available <a
+                            href="https://www.youtube.com/watch?app=desktop&v=yVkdfJ9PkRQ&ab_channel=HarvardNaturalSciencesLectureDemonstrations"
+                            target="_blank">here</a>.
+
                     </p>
                     <a href="https://github.com/ritadoumet/pendulum-waves" target="_blank">Source Code</a>
                 </div>
-                
+
             </div>
 
-            <!--JavaFX-->
             <article class="project" onclick="toggleDetails('javafxgame_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/HotNCold.png" alt="JavaFX HotNCold Game" width="100px">
@@ -386,6 +392,9 @@
                 </div>
             </article>
             <div id="javafxgame_proj" class="proj_details" data-aos="fade-right">
+                <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('javafxgame_proj')"
+                    class="close_btn">
+
                 <div class="media">
                     <p>Screenshot</p>
                     <img src="images/projects/HotNCold.png" height="400px" alt="JavaFX game round">
@@ -396,7 +405,6 @@
                     </video>
                 </div>
                 <div class="media_desc">
-                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('javafxgame_proj')" class="close_btn">
                     <h3>
                         HotN'Cold Desktop Game, JavaFx
                     </h3>
@@ -426,17 +434,19 @@
                         The idea behind the game is extremely simple :
                         <br>
                         finding the "hottest" (reddest) tile on the board in a limited number of clicks.
-                         <br>
-                         In the game, winning a round takes you directly to the next round, unless your time is over. Bear in mind that in each round there is a certain number of clicks that you cannot exceed.
-                         <br>
-                         Every time you win a round, the number of tiles on the board increases, making the hottest tile harder to find. You lose either by clicking on too many tiles without finding the target tile, or by time-out.
+                        <br>
+                        In the game, winning a round takes you directly to the next round, unless your time is over.
+                        Bear in mind that in each round there is a certain number of clicks that you cannot exceed.
+                        <br>
+                        Every time you win a round, the number of tiles on the board increases, making the hottest tile
+                        harder to find. You lose either by clicking on too many tiles without finding the target tile,
+                        or by time-out.
                     </p>
                     <a href="https://github.com/ritadoumet/hotncold-game" target="_blank">Source code</a>
                 </div>
-                
+
             </div>
 
-            <!--Android-->
             <article class="project" onclick="toggleDetails('petstore_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/AndroidSignUp.png" alt="Android Pet Store App" width="100px">
@@ -448,15 +458,28 @@
                 </div>
             </article>
             <div id="petstore_proj" class="proj_details" data-aos="fade-right">
-                <div class="media">
-                    <p>Screenshot 1 : Sign Up Page</p>
-                    <img src="images/projects/AndroidSignUp.png" height="400px" alt="Android Pet Store App">
-                    <p>Screenshot 2 : Customer Main Menu Page</p>
-                    <img src="images/projects/AndroidMainMenu.png" height="400px" alt="Android Pet Store App main menu">
-                    
-                </div>
+                <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('petstore_proj')"
+                    class="close_btn">
+                <table class="media">
+                    <tr>
+                        <td>
+                            <p>Screenshot 1 : Sign Up Page</p>
+                        </td>
+                        <td>
+                            <p>Screenshot 2 : Customer Main Menu Page</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/projects/AndroidSignUp.png" height="400px" alt="Android Pet Store App">
+                        </td>
+                        <td>
+                            <img src="images/projects/AndroidMainMenu.png" height="400px"
+                                alt="Android Pet Store App main menu">
+                        </td>
+                    </tr>
+                </table>
                 <div class="media_desc">
-                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('petstore_proj')" class="close_btn">
                     <h3>
                         Pet Store Application, Android
                     </h3>
@@ -480,20 +503,21 @@
                         Description :
                     </h4>
                     <p>
-                        This application was developed to be used as a main management system for a pet store. 
+                        This application was developed to be used as a main management system for a pet store.
                         <br>
                         It was developed as a project for UML & Android courses.
                         <br>
-                        This hypothetical pet store offers clients both products of many types and services to several animal species. 
-                         <br>
-                         It facilitates communication between clients and staff, makes way for online purchases, online booking, and data archieving in an online real-time database.<br>
+                        This hypothetical pet store offers clients both products of many types and services to several
+                        animal species.
+                        <br>
+                        It facilitates communication between clients and staff, makes way for online purchases, online
+                        booking, and data archieving in an online real-time database.<br>
                     </p>
                     <a href="https://github.com/ritadoumet/PetStoreApp" target="_blank">Source code</a>
                 </div>
-                
+
             </div>
 
-            <!--IP address tracker-->
             <article class="project" onclick="toggleDetails('ipaddr_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/ipaddresstracker.png" alt="IP address tracker" width="100px">
@@ -505,15 +529,16 @@
                 </div>
             </article>
             <div id="ipaddr_proj" class="proj_details" data-aos="fade-right">
+                <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('ipaddr_proj')"
+                    class="close_btn">
                 <div class="media">
                     <p>Screenshot 1 : Desktop view</p>
                     <img src="images/projects/ipaddresstracker.png" height="300px" alt="Desktop View">
                     <p>Screenshot 2 : Mobile View</p>
                     <img src="images/projects/ipaddresstracker_mobile.png" height="400px" alt="Mobile View">
-                    
+
                 </div>
                 <div class="media_desc">
-                    <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('ipaddr_proj')" class="close_btn">
                     <h3>
                         IP Address Tracker, web
                     </h3>
@@ -547,14 +572,77 @@
                         <br>
                         It was a very fun project to code. I added my own small touches to it,
                         <br>
-                         but it closely follows the initial design.
-                    <a href="https://github.com/ritadoumet/ip-tracker" target="_blank">Source code</a>
-                    <a href="https://ritadoumet.github.io/ip-tracker/" target="_blank"></a>
+                        but it closely follows the initial design.
+                        <a href="https://github.com/ritadoumet/ip-tracker" target="_blank">Source code</a>
+                        <a href="https://ritadoumet.github.io/ip-tracker/" target="_blank"></a>
                 </div>
-                
+
             </div>
+
+
         </section>
 
+        <section id="work">
+            <h1 data-aos="fade-up">Work Experience</h1>
+            <div class="timeline">
+                <ul>
+                    <li data-aos="fade-left">
+                        <div class="content">
+                            <div class="time">
+                                <h3>Jul 2022 - Present</h3>
+                            </div>
+                            <h2>Full-time Web Developer at AIMS SAL</h2>
+                            <p>Aims is an IT industry leader and one of fastest growing providers of information Technology that offers Business Software and ERP Solutions.<br>
+                            I took a position there as Frontend Web Developer, where I made use of my HTML, CSS, JavaScript, and Bootstrap knowledge to help convert Socrate legacy code into a modern Web App. I learned to code using Visual Basic along the way, too.<br>
+                            My task was also to supervise and guide a team of four interns during their training.<br>
+                            That is to say, this position was very educative to me, as it taught me leadership and communication skills, as well as a new programming language.</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-right">
+                        <div class="content">
+                            <div class="time">
+                                <h3>Jul 2020 - Feb 2021</h3>
+                            </div>
+                            <h2>Database Developer at EJL Elevators</h2>
+                            <p>EJL is a family-lead business that provides technical solutions and maintenance for elevators since 1980.<br>
+                            I got offered a position there as a Database Developer, since the company wanted to transition its record-keeping method from paper to digital<br>
+                            My task there was to translate the company business rules into UML diagrams, and then create a relational database using Oracle SQL Developer.<br>
+                            This position was one of my favorites, as I was working alongside a tightly knit family and I was made to feel part of them.<br>
+                            It taught me a lot of the soft skills that I have now, including empathy and communication, and especially problem-solving, since I was the only developer working on this task.</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-left">
+                        <div class="content">
+                            <div class="time">
+                                <h3>Sept 2020 - Present</h3>
+                            </div>
+                            <h2>Private Tutor</h2>
+                            <p>I have always had a knack for teaching, so I started giving part-time lessons around my first-year of college.<br>
+                            I enjoyed teaching live lessons in Math, Physics, and Programming to high-school students, which helped them ace their exams. <br>
+                            I also tutored over 200 international students online on Studypool.com, where I earned the Math, Science, Computer Science, Programming, and Foreign Languages badges.<br>It is true that teaching can be very fulfilling, especially if, like me, you had amazing students who were enthusiastic to learn.<br>
+                            It is true that teaching can be very fulfilling, especially if, like me, you were blessed with amazing students who were enthusiastic to learn.<br>
+                            This job definitively taught me creativity and adaptability, as I had to adapt to every student's needs and constantly invent new ways to make the material easily graspable while also being fun.  
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-right">
+                        <div class="content">
+                            <div class="time">
+                                <h3>Sept 2020 - Present</h3>
+                            </div>
+                            <h2>Private Tutor</h2>
+                            <p>I have always had a knack for teaching, so I started giving part-time lessons around my first-year of college.<br>
+                            I enjoyed teaching live lessons in Math, Physics, and Programming to high-school students, which helped them ace their exams. <br>
+                            I also tutored over 200 international students online on Studypool.com, where I earned the Math, Science, Computer Science, Programming, and Foreign Languages badges.<br>It is true that teaching can be very fulfilling, especially if, like me, you had amazing students who were enthusiastic to learn.<br>
+                            It is true that teaching can be very fulfilling, especially if, like me, you were blessed with amazing students who were enthusiastic to learn.<br>
+                            This job definitively taught me creativity and adaptability, as I had to adapt to every student's needs and constantly invent new ways to make the material easily graspable while also being fun.  
+                            </p>
+                        </div>
+                    </li>
+                    <div style="clear: both;"></div>
+                </ul>
+            </div>
+        </section>
         <section id="contact">
             <form name="form1" action="https://formsubmit.co/d9bbb5b32226253532f410bf0cb0bde3" method="POST"
                 data-aos="fade-left">

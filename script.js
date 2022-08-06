@@ -45,6 +45,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
+  
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -118,7 +119,7 @@ function toggleDetails(idElt){
   var elmt = document.getElementById(idElt);
   if (elmt.style.display=='none'){
     elmt.style.display='flex';
-    document.getElementById(idElt).scrollIntoView();
+    // document.getElementById(idElt).scrollIntoView();
   }
   else{
     elmt.style.display='none';
