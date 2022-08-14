@@ -25,7 +25,7 @@
      <div id="social_media">
         <div class="social_media_container">
             <button onclick="expand()" class="social_icon">
-                <img src="images/icons/angle-up-solid.svg" id="expandbtn">
+                <img src="images/icons/angle-up-solid.svg" id="expandbtn" style="width: 100%;">
             </button>
         </div>
 
@@ -316,6 +316,66 @@
             <h2 data-aos="fade-up">
                 Personal Projects
             </h2>
+            <article class="project" onclick="toggleDetails('aspsupermarket_proj')" data-aos="fade-right">
+                <div class="project_img">
+                    <img src="images/projects//supermarketapp_item.png" alt="Asp.NET Supermarket App">
+                </div>
+                <div class="project_desc">
+                    <h3>Supermarket Web App</h3>
+                    <strong>Languages: </strong><br>
+                    Asp.NET, C#
+                </div>
+            </article>
+            <div id="aspsupermarket_proj" class="proj_details" data-aos="fade-right">
+                <img src="images/icons/close.svg" alt="close button" onclick="toggleDetails('aspsupermarket_proj')"
+                    class="close_btn">
+                <div class="media">
+                    <p>Items tab, containing the list of available items and CRUD buttons</p>
+                    <img src="images/projects/supermarketapp_item.png" alt="Asp.NET Supermarket App - Item" height="400px">
+                    <p>User Cart tab, containing the cart items and their quantities</p>
+                    <img src="images/projects/supermarketapp_cart.png" alt="Asp.NET Supermarket App - Cart" height="400px">
+                    <p>Order History tab, containing the user's order history with details of each order.</p>
+                    <img src="images/projects/supermarketapp_order.png" alt="Asp.NET Supermarket App - Order History" height="400px">
+                </div>
+                <div class="media_desc">
+                    <h3>
+                        Supermarket Web Application
+                    </h3>
+                    <h4>
+                        Technology :
+                    </h4>
+                    <ul>
+                        <li>Asp.NET Core 6.0</li>
+                        <li>C#</li>
+                    </ul>
+                    <h4>
+                        Tools :
+                    </h4>
+                    <ul>
+                        <li>Visual Studio 2022</li>
+                        <li>Microsoft SQL Server</li>
+                    </ul>
+                    <h4>
+                        Description :
+                    </h4>
+                    <p>
+                        This project was created for the I3302 Asp.NET course.
+                        <br>
+                        It is an Asp.NET Core 6.0, C# application which uses the MVC design pattern.
+                        <br>
+                        It was coded on Visual Studio 2022 and uses Microsoft SQL Server for the backend.
+                        <br>
+                        The application supports Identity Users (Log in, Register, Log out, Forgot password...), and MultiUser functionality (Admin, Customer, etc.), and uses Authentication and Authorization.<br>
+                        It has a back-end side with a connection to a relational database configured.<br>
+                        It has client-side and server-side input validation.<br>
+                        The application also facilitates search and filter.<br>
+                        I also set up logical navigation on the different pages of the app.
+                        
+                    </p>
+                    <a href="https://github.com/ritadoumet/SupermarketApp" target="_blank">Source Code</a>
+                </div>
+
+            </div>
             <article class="project" onclick="toggleDetails('opengl_proj')" data-aos="fade-right">
                 <div class="project_img">
                     <img src="images/projects/PendulumWaves.png" alt="Pendulum Waves Physics Animation">

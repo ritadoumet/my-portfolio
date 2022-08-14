@@ -60,7 +60,19 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid var(--main-color)}";
     document.body.appendChild(css);
     document.getElementById("age").innerHTML=getAge("2001-02-17")
+    if (screen.width<800){
+      for (const element of document.querySelectorAll("[data-aos]")) {
+        element.setAttribute("data-aos", "")
+    }
+    }
 };
+window.onresize = function(){
+  if (screen.width<800){
+    for (const element of document.querySelectorAll("[data-aos]")) {
+      element.setAttribute("data-aos", "")
+  }
+  }
+}
 function getAge(dateString) {
     var today = new Date();
     var birthDate = new Date(dateString);
