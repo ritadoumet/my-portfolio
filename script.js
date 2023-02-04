@@ -2,6 +2,7 @@ expand();
 toggleDetails('opengl_proj');
 toggleDetails('javafxgame_proj');
 toggleDetails('petstore_proj');
+toggleDetails('aspsupermarket_proj');
 toggleDetails('ipaddr_proj');
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
